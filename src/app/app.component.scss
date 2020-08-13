@@ -1,0 +1,30 @@
+h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  background-color: #3f525c;
+  padding: 1.5rem 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  a{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: #3f525c;
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 0 .5rem;
+    transition: all .25s ease;
+    border: 1px solid #ffffff;
+    &:hover, &.active  {
+      border-color: #3f525c;
+      background-color: #ffffff;
+      color: #3f525c;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="cars">
+    <div class="cars__box">
+        <label for="hero-name">Car name:</label>
+        <input #heroName id="hero-name" />
+        <!-- (click) passes input value to add() and then clears the input -->
+        <button (click)="add(heroName.value); heroName.value=''">Add</button>
+    </div>
+    <ul class="cars__items">
+        <li *ngFor="let hero of heroes">
+            <a routerLink="/detail/{{hero.id}}">{{hero.name}}</a>
+            <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </li>
+    </ul>
+</div>

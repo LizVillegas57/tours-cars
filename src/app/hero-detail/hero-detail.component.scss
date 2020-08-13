@@ -1,0 +1,57 @@
+.details{
+  margin: 2rem 0 0;
+  padding: 0 10vw;
+  h2{
+    margin: 0;
+    text-align: center;
+    color: #3f525c;
+  }
+  &__box{
+    border-radius: 4px;
+    border: 1px solid #3f525c;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 2rem 0 0;
+    outline: none;
+    label{
+      color: #3f525c;
+      font-weight: bold;
+      font-size: 14px;
+      padding-right: 1rem;
+    }
+    input{
+      flex: 1;
+      height: 100%;
+      border-radius: 0;
+      border: 0;
+      border-left: 1px solid #3f525c;
+      padding-left: 1rem;
+      outline: none;
+      font-size: 14px;
+    }
+  }
+  &__actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    button{
+      padding: .5rem 1rem;
+      text-decoration: none;
+      background-color: #3f525c;
+      color: #ffffff;
+      border-radius: 4px;
+      margin: 0 .5rem;
+      transition: all .25s ease;
+      border: 1px solid #ffffff;
+      font-size: 16px;
+      &:hover, &.active  {
+        border-color: #3f525c;
+        background-color: #ffffff;
+        color: #3f525c;
+      }
+    }
+  }
+}

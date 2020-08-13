@@ -1,0 +1,86 @@
+.cars{
+  margin: 2rem 0 0;
+  padding: 0 10vw;
+  &__box{
+    border-radius: 4px;
+    border: 1px solid #3f525c;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    label{
+      color: #3f525c;
+      font-weight: bold;
+      font-size: 14px;
+      padding-right: 1rem;
+    }
+    input{
+      flex: 1;
+      height: 100%;
+      border-radius: 0;
+      border: 0;
+      border-left: 1px solid #3f525c;
+      padding-left: 1rem;
+      outline: none;
+      font-size: 14px;
+    }
+    button{
+      padding: .5rem 1rem;
+      text-decoration: none;
+      background-color: #3f525c;
+      color: #ffffff;
+      border-radius: 4px;
+      margin: 0 .5rem;
+      transition: all .25s ease;
+      border: 1px solid #ffffff;
+      &:hover, &.active  {
+        border-color: #3f525c;
+        background-color: #ffffff;
+        color: #3f525c;
+      }
+    }
+  }
+  &__items{
+    margin: 2rem 0;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    li{
+      position: relative;
+      cursor: pointer;
+      margin: .5rem 0;
+      padding: 0;
+      overflow: hidden;
+      a {
+        border: 1px solid #3f525c;
+        border-radius: 4px;
+        color: #3f525c;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: .5rem 1rem;
+        transition: all 0.25s ease;
+        &:hover{
+          background-color: #3f525c;
+          color: #ffffff;
+        }
+      }
+      button{
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        background-color:#3f525c;
+        color: white;
+        width: 35px;
+        border: none;
+        height: calc(100% - 2px);
+        outline: 0;
+        transition: all 0.25s ease;
+        &:hover{
+          background-color: #ffffff;
+          color: #3f525c;
+        }
+      }
+    }
+  }
+}
